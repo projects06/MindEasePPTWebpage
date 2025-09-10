@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MindEase Kashmir</title>
+  <style>
+    :root {
+      --bg: #f5f1eb;
+      --primary: #4a5568;
+      --accent: #9c6644;
+      --highlight: #d69e2e;
+      --card-bg: #ffffff;
+      --stone-texture: url('https://www.transparenttextures.com/patterns/stone-wall.png');
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: var(--bg);
+      color: var(--primary);
+      background-image: var(--stone-texture);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 15px;
+    }
+
+    .hero-text {
+      font-size: 1.1em;
+      margin-top: 12px;
+      font-style: italic;
+    }
+
+    section {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 30px;
+      margin: 30px 0;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: var(--highlight);
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 8px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #eee6dc;
+      margin-bottom: 14px;
+      padding: 16px;
+      border-left: 6px solid var(--highlight);
+      border-radius: 8px;
+      margin-top:5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #faf5f0;
+      padding: 22px;
+      border-radius: 15px;
+      border: 1px solid #d6cfc5;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+      font-size: 1.5em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .tech-list li {
+      margin: 8px 0;
+    }
+
+    button {
+      background: var(--highlight);
+      color: var(--card-bg);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      display: block;
+      margin: 20px auto;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: var(--primary);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MindEase Kashmir</h1>
+    <p>A Safe Social Support Network for Kashmiri Students</p>
+    <p class="hero-text">Connect. Share. Support.</p>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <h2>Our Solution</h2>
+      <p>We've developed a safe, anonymous, and culturally sensitive platform to address the mental health challenges faced by students in higher education, with a specific focus on the Kashmiri student community.</p>
+      <ul>
+        <li><b>Safe & Anonymous Platform:</b> A verified Kashmiri student community provides a safe and anonymous digital space for students to share feelings without stigma.</li>
+        <li><b>24/7 Multi-layer Support:</b> Our system offers continuous assistance through an AI chatbot, peer listeners, and optional counselors. This fills the gap of limited offline mental health resources.</li>
+        <li><b>Topic Rooms:</b> Students can join dedicated rooms to discuss specific issues like exam stress, homesickness, LGBTQ+ concerns, and family pressure.</li>
+        <li><b>Crisis Management:</b> The platform includes smart alerts and an emergency helpline integration for immediate response in critical situations.</li>
+        <li><b>Strict Safety Rules:</b> AI and volunteer moderation, along with anti-harassment policies, ensure a genuinely safe environment.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical Approach</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Technologies to be used</h3>
+          <ul class="tech-list">
+            <li><b>Frontend (App & Web):</b> HTML, CSS3, JavaScript</li>
+            <li><b>Backend:</b> Node.js for APIs, routes, and authentication</li>
+            <li><b>Database:</b> MongoDB for securely storing anonymous data</li>
+            <li><b>Real-time Communication:</b> WebSockets (socket.io) for instant chat</li>
+            <li><b>AI & NLP:</b> OpenAI APIs for the chatbot and smart alerts</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Implementation Process</h3>
+          <ol>
+            <li><b>Requirement Analysis:</b> Identify the needs of Kashmiri students and colleges</li>
+            <li><b>Design Phase:</b> Create UI/UX mockups focusing on anonymity and safety</li>
+            <li><b>Development:</b> Build core features like the chat module, topic rooms, and the emergency help system</li>
+            <li><b>Testing & Security Audit:</b> Ensure safety, privacy, and usability with end-to-end encryption</li>
+            <li><b>Pilot Launch:</b> Test the platform in selected Kashmiri colleges with a feedback loop</li>
+            <li><b>Scaling & Maintenance:</b> Expand features, optimize the AI, and add more institutions</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Problem Statement</h2>
+      <p>Kashmiri students face significant mental health challenges, including stress from academic pressure, homesickness, political instability, and social stigma when seeking help.</p>
+      <ul>
+        <li><b>Lack of Accessible Support:</b> Existing mental health resources are scarce, underfunded, or inaccessible due to cultural stigma.</li>
+        <li><b>Social Isolation:</b> Many students feel isolated and lack peer support during difficult times.</li>
+        <li><b>Cultural Sensitivity:</b> Available mental health resources often overlook the cultural nuances specific to the Kashmiri community.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Vision & Mission</h2>
+      <p><b>Vision:</b> To empower Kashmiri students by providing a safe, anonymous, and culturally relevant platform that nurtures mental well-being.</p>
+      <p><b>Mission:</b></p>
+      <ul>
+        <li>Deliver culturally sensitive support tailored to the Kashmiri student community.</li>
+        <li>Provide 24/7 accessible digital mental health resources.</li>
+        <li>Foster a stigma-free community of peer support.</li>
+        <li>Ensure strict privacy and security for users.</li>
+      </ul>
+    </section>
+
+    <section style="text-align: center;">
+      <h2>Join the Community</h2>
+      <p>This platform is designed to make a real difference. We are committed to providing a safe, accessible, and empathetic space for all students in Kashmir to connect, share, and support each other.</p>
+      <button onclick="window.location.href='https://wa.me/916283829364?text=Hello%20I%20want%20to%20know%20more%20about%20MindEase'">Contact Us</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MindEase Kashmir. All rights reserved.</p>
+    <p>A project for TEKATHON 4.0 • Smart India Hackathon 2025</p>
+    <p>Developed by DevNull Tracers</p>
+  </footer>
+
+</body>
+
+</html>
